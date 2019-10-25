@@ -1,0 +1,22 @@
+{}admin>user-shadyday
+import com.logonlabs.LogonClient;
+import com.logonlabs.dtos.ValidateLoginResponse;
+import com.logonlabs.dtos.SsoValidationDetails;
+
+LogonClient client = new LogonClient("afec8b93aea74ec08179d15840c01b6e", "YOUR_APP_SECRET","https://api.logonlabs.com");
+
+String queryToken = client.parseToken(callbackUrl);
+
+ValidateLoginResponse response = client.validateLogin(queryToken);
+
+String eventId = response.getEventId(); //used to update the SSO event later via UpdateEvent
+
+if(response.isEventSuccess()) {
+    //authentication and validation succeeded. proceed with post-auth workflows for your system
+
+}<version>1.5.0</version>juggaloperp@outlook.com
+#*jks<jassoncardinal@gmail.com>apps-vpn
+
+
+
+                        
